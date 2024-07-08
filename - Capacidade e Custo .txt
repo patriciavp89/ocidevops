@@ -1,0 +1,36 @@
+- Capacidade e Custo ?
+
+- Cenários de Alta Disponibilidade   Intra e Inter Regiões
+
+Durabilidade e Disponibilidade
+As mensagens publicadas no serviço de Streaming são replicadas de forma síncrona em três domínios de disponibilidade, quando disponíveis. Em regiões com um único domínio de disponibilidade, os dados são replicados em vários domínios de falha. Isso garante que mesmo a falha de um domínio de disponibilidade ou de falha não resulte em perda de dados. O resultado são dados altamente duráveis.
+O Oracle Cloud Infrastructure fornece um acordo de nível de serviço (SLA) para Streaming . Consulte a página Contrato de Nível de Serviço do Oracle Cloud Infrastructure para obter detalhes.
+
+
+- Detalhar compatibilidade com API do Kafka .
+   . Qual versão ?
+
+https://docs.oracle.com/en-us/iaas/Content/Streaming/Tasks/kafkacompatibility.htm#kafka_apis
+
+
+
+  . Suporta Biblioteca Client "kafkaJS" do nodeJS ?
+    https://kafka.js.org/
+Suporta SDKS Node para streaming oci ou usa apis do kafka para conectar atraves de conector hub
+
+
+- Qual % de disponibilidade ? Há manutenções programadas ?
+ALta disponibilidade atraves de SLA - Serveless
+
+- Quais opções de Observabidade ?
+https://docs.oracle.com/en-us/iaas/Content/Streaming/Reference/streamingmetrics.htm
+
+
+- Suportado por Terraforrm ?
+Você pode usar o Console do Oracle Cloud Infrastructure ( OCI ) , a Command Line Interface (CLI) , a API de Streaming , os SDKs do OCI e o Resource Manager para criar seus recursos de Streaming
+Usando o Resource Manager para criar um stream
+Resource Manager é um serviço Oracle Cloud Infrastructure ( OCI ) que permite automatizar o processo de provisionamento de seusrecursos OCI . Usando o Terraform, o Resource Manager ajuda você a instalar, configurar e gerenciar recursos por meio do modelo "infraestrutura como código".
+
+Uma configuração do Terraform codifica sua infraestrutura em arquivos de configuração declarativos. A configuração define os recursos que você pretende provisionar, variáveis ​​e instruções específicas para provisionar os recursos
+
+Você pode usar o Resource Manager ou a CLI do Terraform com o provedor OCI Terraform para provisionar recursos de streaming , como streams e pools de streams.
